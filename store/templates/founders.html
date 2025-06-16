@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Sales - Your Business{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0077cc;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 28px;
+            color: #333;
+        }
+        .about {
+            font-size: 16px;
+            color: #555;
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #0077cc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'img/one.jpg' %}" alt="My Picture" class="profile-pic">
+        <h1>Your Real Dad</h1>
+        <div class="about">
+            <p>Hello! I'm Your Real Dad, your drug dealer. Place an order and get yours at your door step.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/+447719280655" target="_blank">Whatsapp</a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+    <div class="container">
+        <img src="{% static 'img/two.jpg' %}" alt="My Picture" class="profile-pic">
+        <h1>Steven</h1>
+        <div class="about">
+            <p>Jason Citron (born September 21, 1984) is an American businessman who is the co-founder and former chief executive officer of Discord, an instant messaging social platform.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/+14406455318" target="_blank">Whatsapp</a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <img src="{% static 'img/tiktok_video_9W029.jpeg' %}" alt="My Picture" class="profile-pic">
+        <h1>XAX</h1>
+        <div class="about">
+            <p>Hello! I'm XAX, your drug dealer. Place an order and get yours at your door step.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/+15203024284" target="_blank">Whatsapp</a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div> -->
+
+</body>
+</html>
+
+
+{% endblock %}

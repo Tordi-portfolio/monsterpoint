@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+     <!-- Header-->
+     <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Categories</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Choose category to view products...</p>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/wilfred.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WILFRED BOUDEUWEN</h5>
+          <p class="card-text">The CEO of the WILFRED BIKES orgnization world wide...</p>
+          <a href="https://wa.me/+2347068848255" class="btn btn-primary">Contact</a>
+        </div>
+    </div><br><br>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/mecky.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MECKY BOSS</h5>
+          <p class="card-text">Marketer of the WILFRED BIKES organisation world wide...</p>
+          <a href="https://wa.me/+2347068848255" class="btn btn-primary">Contact</a>
+        </div>
+    </div><br><br>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/tordi.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TORDI FRIDAY</h5>
+          <p class="card-text">The developer of the WILFRED BIKES web-sites and APP E-commerce site.</p>
+          <a href="https://wa.me/+2347068848255" class="btn btn-primary">Contact</a>
+        </div>
+    </div><br><br>
+
+{% endblock %}
